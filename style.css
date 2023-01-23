@@ -1,0 +1,72 @@
+body {
+  background-image: url('yoel-winkler-4qz8JE35Go0-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.custom-nav {
+  padding: 50px;
+  margin-left: 20px;
+}
+
+.profile-pic {
+  border: 1px solid silver;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  background-color: rgba(165, 42, 42, 0.526);
+}
+
+.top-left-design {
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  width: 80px;
+  height: 70px;
+  position: absolute;
+  left: 25%;
+  top: 1%;
+}
+
+.main {
+  border: 1px solid burlywood;
+  position: absolute;
+  top: 3%;
+  left: 26%;
+  height: 95%;
+  width: 670px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.bottom-right-design {
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+  width: 80px;
+  height: 70px;
+  position: absolute;
+  right: 24%;
+  bottom: 0%;
+}
+
+.custom-col-2ndpage {
+  opacity: 80%;
+}
+
+.custom-col-intro-2ndpage .custom-card-intro-2ndpage {
+  background-color: rgba(0, 0, 0, 0.556);
+  color: wheat;
+}
+
+.custom-col-2ndpage .custom-card-2ndpage {
+  background-color: rgba(0, 0, 0, 0.556);
+  color: wheat;
+}
+

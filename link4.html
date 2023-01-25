@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="page4-body">
 
   <div class="container-fluid custom-container">
     <div class="row">
       <div class="col custom-col-nav-4thpage">
-        <nav class="nav flex-column custom-nav">
+        <nav class="nav flex-column custom-nav" data-aos="fade-down-right" data-aos-delay="100" data-aos-duration="1000">
           <a class="nav-link custom-nav-link" href="index.html"><i class="material-icons" style="font-size:30px;">home</i></a>
           <a class="nav-link custom-nav-link" href="link2.html"><i class="material-icons" style="font-size:30px">local_library</i></a>
           <a class="nav-link custom-nav-link" href="link3.html"><img src="tourists (1).png" alt=""></a>
@@ -24,7 +25,129 @@
           </a>
         </nav>
       </div>
+
+      <div class="col-10 custom-col-intro-page">
+        <div class="card text-center custom-card-intro-page">
+          <div class="card-header">
+            <h4>FOR MORE INFORMATION</h4>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Contact Us</h5>
+            <p class="card-text">
+              
+            </p>
+            <a href="" target="_blank" class="btn btn-primary">
+              <em>LinkedIn</em>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col"></div>
+      <div class="col custom-col-location">
+        <h3 class="location-text">OUR <br> LOCATION</h3>
+      </div>
+      <div class="col">
+        <a href="https://goo.gl/maps/Vqp2xgMUnmcktJSf9" target="_blank">
+          <img src="images/location(map).png" class="map-img" alt="">
+        </a>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-8 custom-container-4">
+        <form action="action_page.php">
+          <div class="row link4-row">
+              <div class="col-25 custom-col-25">
+                  <label for="fname">First Name</label>
+              </div>
+              <div class="col-75 custom-col-75">
+                  <input type="text" name="firstname" 
+                  placeholder="firstname...">
+              </div>
+          </div>
+          <div class="row link4-row">
+              <div class="col-25 custom-col-25">
+                  <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75 custom-col-75">
+                  <input type="text" name="lastname"
+                  placeholder="lastname...">
+              </div>
+          </div>
+          <div class="row link4-row">
+              <div class="col-25 custom-col-25">
+                <label>Gender</label>
+              </div>
+              <div class="col-75 custom-col-75">
+                <input type="radio" name="gender" />Male
+                <input type="radio" name="gender" />Female
+                <input type="radio" name="gender" />Other
+              </div>
+          </div>
+          <div class="row link4-row">
+              <div class="col-25 custom-col-25">
+                <label for="email">Email</label>
+              </div>
+              <div class="col-75 custom-col-75">
+                <input type="text" name="email" 
+                placeholder="...@gmail.com">
+              </div>
+          </div>
+          <div class="row link4-row">
+              <div class="col-25 custom-col-25">
+                <label for="Phone">Phone Number</label>
+              </div>
+              <div class="col-75 custom-col-75">
+                <input type="text" name="phone number">
+              </div>
+          </div>
+          <div class="row link4-row">
+              <div class="col-25 custom-col-25">
+                <label for="country">Country</label>
+              </div>
+              <div class="col-75 custom-col-75">
+              <select id="country" name="country">
+                <option value="ghana">Ghana</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              </div>
+          </div>
+          <div class="row link4-row">
+              <div class="col-25 custom-col-25">
+                <label for="address">Address</label>
+              </div>
+              <div class="col-75 custom-col-75">
+                <input type="text" name="address" 
+                placeholder="street name/ digital address">
+              </div>
+          </div>
+          <div class="row link4-row">
+            <div class="col-25 custom-col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75 custom-col-75">
+              <textarea id="subject" name="subject" 
+              placeholder="Write something.." style="height:200px">
+              </textarea>
+            </div>
+          </div>
+          <div class="row link4-row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+      <div class="col"></div>
+    </div>
+
     <br>
     
     <hr class="horizontal-row">
@@ -38,6 +161,7 @@
           <li><a href="link2.html"><h6 class="footer-list">Local Library</h6></a></li>
           <li><a href="link3.html"><h6 class="footer-list">Tourism</h6></a></li>
           <li><a href="link4.html"><h6 class="footer-list">Info-Page</h6></a></li>
+          <h5 class="footer-connect">CONNECT</h5>
         </ul>
       </div>
       <div class="col">
@@ -46,6 +170,10 @@
           <li class="footer-list"><i class="material-icons footer-list" style="font-size:24px;">local_phone</i>+233 501 *** ***</li>
           <li class="footer-list"><i class="material-icons footer-list" style="font-size:24px;">local_post_office</i>ok.kobby19@gamil.com</li>
           <li class="footer-list"><img src="images/whatsapp.png" alt="">+233 501 *** ***</li>
+          <br>
+          <p class="footer-connect">
+            <img src="images/github.png" alt=""> <img src="images/facebook.png" alt=""> <img src="images/linkedin.png" alt=""> <img src="images/twitter-sign.png" alt="">
+          </p>
         </ul>
       </div>
       <div class="col">
@@ -53,7 +181,9 @@
         <ul>
           <li class="footer-list"><i class="material-icons footer-list" style="font-size:24px;">my_location</i>
             Lakeside Community1
-            <p>Accra, Ghana.</p> 
+            <p>Accra, Ghana.</p>
+            <br><br>
+            <p class="footer-connect">&copy;All Rights Reserved</p> 
           </li>
         </ul>
       </div>
@@ -63,5 +193,11 @@
   <script src=""></script>
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false
+    });
+  </script>
 </body>
 </html>

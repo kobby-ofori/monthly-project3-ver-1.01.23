@@ -28,7 +28,9 @@
 
       <div class="col-6 custom-main-col-1stpage">
         <div class="top-left-design" data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000"></div>
-        <div class="main" data-aos="flip-down" data-aos-delay="100" data-aos-duration="2000"></div>
+        <div class="main" data-aos="flip-down" data-aos-delay="100" data-aos-duration="2000">
+          <h2 class="auto-type-head"><span class="auto-type"></span></h2>
+        </div>
         <div class="bottom-right-design" data-aos="fade-left" data-aos-delay="200" data-aos-duration="2000"></div>
       </div>
 
@@ -81,10 +83,19 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="app.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
     AOS.init({
       once: false
     });
+  </script>
+  <script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Discover a unique sense of culture, art and tourism.", "My country Ghana has it all.", "From the People, their Customs and Tradition.", "Welcome to Ghana.", "Akwaaba!"],
+        typeSpeed: 80,
+        backSpeed: 40,
+        loop: true
+      });
   </script>
 </body>
 </html>

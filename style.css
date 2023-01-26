@@ -104,6 +104,17 @@ body {
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.auto-type {
+  color: wheat;
+}
+
+.auto-type-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30% 15px 0 15px;
+}
+
 .bottom-right-design {
   border-bottom: 2px solid red;
   border-right: 2px solid red;

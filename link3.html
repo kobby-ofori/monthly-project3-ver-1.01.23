@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ADINKRA TOURS</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -14,8 +14,11 @@
 
   <div class="container-fluid custom-container">
     <div class="row">
-      <div class="col custom-col-nav-3rdpage">
-        <nav class="nav flex-column custom-nav" data-aos="fade-down-right" data-aos-delay="100" data-aos-duration="1000">
+      <button class="menu-toggle" id="menuToggle" onclick="navToggler()">
+        <img src="./images/menu.png" alt="" />
+      </button>
+      <div class="col-sm-12 col-md-3 side-nav-div">
+        <nav class="nav sticky-top navbar flex-column custom-nav" data-aos="fade-down-right" data-aos-delay="100" data-aos-duration="1000">
           <a class="nav-link custom-nav-link" href="index.html"><i class="material-icons" style="font-size:30px;">home</i></a>
           <a class="nav-link custom-nav-link" href="link2.html"><i class="material-icons" style="font-size:30px">local_library</i></a>
           <a class="nav-link custom-nav-link active" href="link3.html"><img src="tourists (1).png" alt=""></a>
@@ -25,7 +28,7 @@
           </a>
         </nav>
       </div>
-      <div class="col-10 custom-col-intro-page">
+      <div class="col-sm-12 col-md-9 custom-col-intro-page">
         <div class="card text-center custom-card-intro-page" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
           <div class="card-header">
             <h4>TOURISM IN GHANA</h4>
@@ -54,7 +57,7 @@
     <div class="row">
       <div class="col"></div>
       <div class="col"></div>
-      <div class="col custom-col-2ndpage">
+      <div class="col-sm-12 col-md-6 custom-col-2ndpage">
         <div class="card mb-3 custom-card-3rdpage" style="max-width: 540px;" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1000">
           <div class="row no-gutters">
             <div class="col-md-4">
@@ -83,7 +86,7 @@
 
     <div class="row">
       <div class="col"></div>
-      <div class="col custom-col-2ndpage">
+      <div class="col-sm-12 col-md-6 custom-col-2ndpage">
         <div class="card mb-3 custom-card-3rdpage" style="max-width: 540px;" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="1000">
           <div class="row no-gutters">
             <div class="col-md-4">
@@ -111,7 +114,7 @@
     <div class="row">
       <div class="col"></div>
       <div class="col"></div>
-      <div class="col custom-col-2ndpage">
+      <div class="col-sm-12 col-md-6 custom-col-2ndpage">
         <div class="card mb-3 custom-card-3rdpage" style="max-width: 540px;" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1000">
           <div class="row no-gutters">
             <div class="col-md-4">
@@ -140,7 +143,7 @@
 
     <div class="row">
       <div class="col"></div>
-      <div class="col custom-col-2ndpage">
+      <div class="col-sm-12 col-md-6 custom-col-2ndpage">
         <div class="card mb-3 custom-card-3rdpage" style="max-width: 540px;" data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="1000">
           <div class="row no-gutters">
             <div class="col-md-4">
@@ -170,7 +173,7 @@
     <div class="row">
       <div class="col"></div>
       <div class="col"></div>
-      <div class="col custom-col-2ndpage">
+      <div class="col-sm-12 col-md-6 custom-col-2ndpage">
         <div class="card mb-3 custom-card-3rdpage" style="max-width: 540px;" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1000">
           <div class="row no-gutters">
             <div class="col-md-4">
@@ -197,7 +200,7 @@
 
     <div class="row">
       <div class="col"></div>
-      <div class="col custom-col-2ndpage">
+      <div class="col-sm-12 col-md-6 custom-col-2ndpage">
         <div class="card mb-3 custom-card-3rdpage" style="max-width: 540px;" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
           <div class="row no-gutters">
             <div class="col-md-4">
@@ -228,7 +231,7 @@
   
     <div class="row footer">
       <hr>
-      <div class="col">
+      <div class="col-sm-12 col-md-4">
         <h4 class="footer-head">Navigate</h4>
         <ul class="footer-list">
           <li><a href="index.html"><h6 class="footer-list">Home Page</h6></a></li>
@@ -237,7 +240,7 @@
           <li><a href="link4.html"><h6 class="footer-list">Info-Page</h6></a></li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col-sm-12 col-md-4">
         <h4 class="footer-head">Contact</h4>
         <ul>
           <li class="footer-list"><i class="material-icons footer-list" style="font-size:24px;">local_phone</i>+233 501 *** ***</li>
@@ -245,7 +248,7 @@
           <li class="footer-list"><img src="images/whatsapp.png" alt="">+233 501 *** ***</li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col-sm-12 col-md-4">
         <h4 class="footer-head">Locate Us</h4>
         <ul>
           <li class="footer-list"><i class="material-icons footer-list" style="font-size:24px;">my_location</i>
@@ -260,6 +263,7 @@
   <script src=""></script>
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({

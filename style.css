@@ -1,3 +1,6 @@
+::-webkit-scrollbar{
+  display: none;
+}
 body {
   background-image: url('yoel-winkler-4qz8JE35Go0-unsplash.jpg');
   background-size: cover;
@@ -20,6 +23,10 @@ body {
   background-color: rgba(0, 0, 0, 0.68);
   border-radius: 25px;
   
+}
+
+.menu-toggle{
+  display: none;
 }
 
 .custom-nav {
@@ -262,10 +269,55 @@ input[type=submit] {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .main {
+    border: 1px solid burlywood;
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    height: 95%;
+    width: 95%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  .profile-pic {
+    border: 1px solid silver;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(165, 42, 42, 0.526);
+  }
+  
+  .profile-pic-img {
+    margin: 5px 0 0 22px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .home-footer{
+    margin-top: 100%;
+  }
   .custom-col-25, .custom-col-75, input[type=submit] {
-    width: 100%;
+    width: 50%;
     margin-top: 0;
+  }
+  .info-form{
+    width: 90%;
+  }
+  .side-nav-div {
+    display: none; /* Hide the navigation menu by default */
+    position: fixed;
+    background-color: rgba(165, 42, 42, 0.812);
+  }
+
+  .menu-toggle {
+    background-color: rgba(165, 42, 42, 0.812);
+    display: block; /* Display the toggle button */
+    z-index: 1;
   }
 }
 
